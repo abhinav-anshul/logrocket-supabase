@@ -44,6 +44,8 @@ export default function Home({ session }: any) {
     }
   }
 
+  console.log({ user })
+
   const handleDelete = async (id: string) => {
     try {
       if (!user) return
@@ -58,6 +60,10 @@ export default function Home({ session }: any) {
     } catch (error) {
       alert(error.message)
     }
+  }
+
+  if (user === undefined) {
+    return <div className={styles.loading}>Welcome to Workout App.</div>
   }
 
   if (loading) {

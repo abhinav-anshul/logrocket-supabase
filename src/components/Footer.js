@@ -1,5 +1,5 @@
-import Link from "next/link";
-import styles from "../styles/Footer.module.css";
+import Link from "next/link"
+import styles from "../styles/Footer.module.css"
 
 const Footer = () => {
   return (
@@ -14,11 +14,11 @@ const Footer = () => {
           <span className={styles.stack}>Supabase</span>
         </Link>
       </h1>
-      <Link href="https://github.com/Taofiqq/nextjs-supabase-app">
+      <Link href="https://github.com/abhinav-anshul/logrocket-supabase">
         <p className={styles.repo}>Github Repo</p>
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
